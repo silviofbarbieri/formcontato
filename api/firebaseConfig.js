@@ -1,5 +1,9 @@
 // Acessa as variáveis de ambiente que o Vercel injeta neste ambiente de servidor.
 // O "process.env" é um objeto do Node.js que só funciona aqui no backend.
+export default function handler(req, res) {
+  return res.status(404).end();
+}
+
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
